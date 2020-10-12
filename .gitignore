@@ -1,0 +1,7 @@
+.vscode
+.docstring
+build/*
+dist/*
+data/*
+development/*
+__pycache__
