@@ -4,4 +4,5 @@ build/*
 dist/*
 data/*
 development/*
+amesQSAR.egg-info/
 __pycache__
