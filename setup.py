@@ -9,6 +9,6 @@ setup(
    description='small hydrocarbon QSAR for direct acting Ames test mutagens',
    author='Trevor Sleight',
    author_email='twsleight@gmail.com',
-   packages=['ames_qsar'],  #same as name
+   packages=find_packages(),  #same as name
    install_requires=requirements, #external packages as dependencies
 )
