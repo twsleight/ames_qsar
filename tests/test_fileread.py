@@ -1,5 +1,6 @@
 import pytest
 import os
+import ames_qsar
 from ames_qsar.out_fileread import out_fileread
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
