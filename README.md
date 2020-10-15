@@ -1,2 +1,4 @@
 # ames_qsar
-This folder contains basic code for the ames test QSAR developed by Trevor Sleight and Caitlin Sexton Summer 2020
+This folder contains basic code for the ames_qsar
+
+[![Build Status](https://travis-ci.org/twsleight/ames_qsar.svg?branch=travis2)](https://travis-ci.org/twsleight/ames_qsar)
