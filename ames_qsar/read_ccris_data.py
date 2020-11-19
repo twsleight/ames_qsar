@@ -22,7 +22,7 @@ def CIRconvert(ids):
 #code for reading in the xml file
 
 import xml.etree.ElementTree as etree
-
+from ames_qsar.read_ccris_data import CIRconvert
 def convert_xml_xlsx(filename):
     tree = etree.parse(filename)
     root = tree.getroot()
@@ -31,7 +31,7 @@ def convert_xml_xlsx(filename):
     for child in root:
         name = child.find("NameOfSubstance").text
         cas_num = child.find( "CASRegistryNumber").text
-        smiles = []
+        smiles = CIRconvert(cas_num)
         ips = child.findall("mstu")
 
         #if ips is not found there is no data in this child
