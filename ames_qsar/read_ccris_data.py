@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Wed Oct 30 09:27:56 2019
 
 @author: twsle
 """
+
+
 #acknowledgements
 #https://stackoverflow.com/a/54932071/10226776 for the CIR convert function
 import os
@@ -24,6 +26,17 @@ def CIRconvert(ids):
 import xml.etree.ElementTree as etree
 from ames_qsar.read_ccris_data import CIRconvert
 def convert_xml_xlsx(filename):
+    '''convert_xml_xlsx documentation
+
+    reads the CCRIS xml file out to a dataframe.
+    returns CAS number, Ames test data, activation testMethod and result
+
+    Args:filename: the xml file to be converted
+
+    Returns:DataFrame:
+
+    '''
+
     tree = etree.parse(filename)
     root = tree.getroot()
 
